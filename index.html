@@ -7,20 +7,20 @@
     </head>
 
     <body style="margin: 0px; overflow: hidden;">
-        <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+        <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: true;'>
             
             <a-assets>
                 <a-asset-item id="cad-model" src="my_model.glb"></a-asset-item>
             </a-assets>
 
             <a-marker preset="hiro">
-                
+                <a-box position='0 0.5 0' material='color: red; opacity: 0.5;' scale="0.2 0.2 0.2"></a-box>
+
                 <a-entity 
                     gltf-model="#cad-model" 
-                    scale="0.5 0.5 0.5" 
+                    scale="0.001 0.001 0.001" 
                     position="0 0 0" 
-                    rotation="0 0 0">
-                </a-entity>
+                    rotation="-90 0 0"> </a-entity>
 
             </a-marker>
 
