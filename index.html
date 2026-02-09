@@ -4,7 +4,7 @@
         <title>FOE USJP AR Project</title>
         <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/donmccready/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
     </head>
 
     <body style="margin: 0px; overflow: hidden;">
@@ -18,10 +18,11 @@
                 
                 <a-entity 
                 gltf-model="#cad-model" 
-                scale="0.2 0.2 0.2" 
+                scale="0.3 0.3 0.3" 
                 position="0 0 0" 
                 rotation="0 0 0"
-                animation-mixer="clip: *; loop: repeat; timeScale: 1;">
+                crossorigin="anonymous"
+                animation-mixer="clip: Animation; loop: repeat; timeScale: 1; repetitions: Infinity;">
                 </a-entity>
 
             </a-marker>
@@ -34,6 +35,7 @@
         </a-scene>
     </body>
 </html>
+
 
 
 
