@@ -14,27 +14,27 @@
                 <a-asset-item id="cad-model" src="my_model.glb"></a-asset-item>
             </a-assets>
 
-           <a-marker type="pattern" url="AR_Marker.patt">
+            <a-marker type="pattern" url="AR_Marker.patt">
                 
                 <a-entity 
-                gltf-model="#cad-model" 
-                scale="0.3 0.3 0.3" 
-                position="0 0 0" 
-                rotation="0 0 0"
-                crossorigin="anonymous"
-                animation-mixer="clip: Animation; loop: repeat; timeScale: 1; repetitions: Infinity;">
+                    gltf-model="#cad-model" 
+                    scale="0.3 0.3 0.3" 
+                    position="0 0 0" 
+                    rotation="0 0 0"
+                    animation-mixer="clip: Animation; loop: repeat; timeScale: 1;">
                 </a-entity>
 
             </a-marker>
 
-            <a-entity light="type: ambient; intensity: 2.0; color: #FFF"></a-entity>
-            <a-entity light="type: directional; intensity: 1.0" position="1 1 1"></a-entity>
+            <a-entity light="type: ambient; intensity: 2.5; color: #FFF"></a-entity>
+            <a-entity light="type: directional; intensity: 1.2" position="1 1 1"></a-entity>
 
             <a-entity camera></a-entity>
             
         </a-scene>
     </body>
 </html>
+
 
 
 
